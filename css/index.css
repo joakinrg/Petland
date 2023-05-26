@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     transition: .2s linear;
-    text-transform: capitalize;
     text-decoration: none;
     outline: none; border: none;
 }
@@ -21,6 +20,7 @@ header{
     align-items: center;
     margin-bottom: 5px;
     z-index: 99;
+    line-height: 2;
 }
 header .logo{
     width: 90px;
@@ -59,31 +59,31 @@ header .icons a{
     margin: auto;
 }
 .banner .bannertxt p{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 25px;
     letter-spacing: 2px;
 }
 .banner .bannertxt h1{
-    font-size: 58px;
+    font-size: 90px;
     line-height: 1.1;
     font-weight: 600;
 
 }
 .facility{
-    width: 100%;
+    width: 115%;
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding-bottom: 20px;
 }
 .w-70{
-    width: 84%;
+    width: 100%;
     margin: auto;
 }
 .facility .f_item{
-    width: 220px;
-    height: 255px;
+    width: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,11 +96,23 @@ header .icons a{
 .facility .f_item h3{
     z-index: 99;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.1;
     padding-top: 12px;
 }
+.facility .f_item p{
+    z-index: 99;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-top: 12px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
 
 .navigation a {
     position: relative;
