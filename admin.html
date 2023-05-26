@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p class="logo"><img src="./imagenes_principal/logo.jpg"><h2>Petland</h2></p>
+        <nav class="navigation">
+            <button class="btn-salir">
+                <span class="text">Eliminar usuario</span>                  
+            </button>
+            <button class="btn-salir">
+                <span class="text">Agregar perro en adopción</span>                  
+            </button>
+            <button class="btn-salir">
+                <span class="text">Eliminar perro en adopcion</span>                 
+            </button>
+            <button class="btn-salir">
+                <span class="text">Salir</span>                  
+            </button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="eliminar">
+            <h2>Eliminar Usuario</h2>
+            <form id="form" action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Apellido Paterno</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Apellido Materno</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email del Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Contraseña Administrador</label>
+                </div>
+                <button type="submit" class="btn">Eliminar Usuario</button>
+            </form>
+        </div>
+        <div class="eliminarpe">
+            <h2>Eliminar Perro</h2>
+            <form id="form" action="#">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Raza</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Sexo</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Edad</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Tamaño</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Contraseña Administrador</label>
+                </div>
+                <button type="submit" class="btn">Eliminar Perro</button>
+            </form>
+        </div>
+        <div class="agregarpe">
+            <h2>Agregar Perro</h2>
+            <form id="form" action="#">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Raza</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Sexo</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Edad</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Tamaño</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Comportamiento</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Sociabilidad</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Salud</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Ubicación</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Contraseña Administrador</label>
+                </div>
+                <button type="submit" class="btn">Eliminar Perro</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/admin.js"></script>
+</body>
+</html>

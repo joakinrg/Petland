@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y registro</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body> 
+    <header>
+        <!--<p class="logo"><img src="./imagenes_principal/logo.jpg"><h2>Petland</h2></p>-->
+        <nav class="navigation">
+            <a href="./index.html">Home</a>
+            <a href="./usuario_informacion_adopcion.html">Cuidados y Preguntas Frecuentes</a>
+            <a href="./repertolio_perfiles.html">Adopta</a>
+            <a href="./historias_exito_petland.html">Historias de Éxito</a>
+            <a href="./refugio.html">Conoce el Refugio</a>
+            <a href="./PERFIL_USUARIO.html">Perfil</a>
+        </nav>
+        <div class="icons">
+            <a class="btn-login" >
+                <span class="icon"><ion-icon name="log-in"></ion-icon></span>               
+            </a>
+            <a class="btn-cart" href="./carritocompras.html">
+                <span class="icon"><ion-icon name="cart"></ion-icon></span>               
+            </a>
+            <a class="btn-cart" href="./PERFIL_USUARIO.html">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>               
+            </a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form id="form"action="#">
+                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" spellcheck="false" id="username" onkeyup="validateemail()" required>
+                    <label id="email-label" >Email</label>
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="" id="password" required>
+                    <label>Contraseña</label>
+                    
+                </div>
+                <div class="recordar">
+                    <label><input type="checkbox">Recordarme</label>
+                    <a href="#">¿Olvidaste tu contraseña? </a>
+                </div>
+                <button id="login"type="submit" class="btn">Login</button>
+                <button id="clear" class="btn">Limpiar</button>
+                <div class="login-register">
+                    <p>¿No tienes cuenta?<a href="#" class="register-link">Crea una</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box registro">
+            <h2>Registro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Apellido Paterno</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Apellido Materno</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordar">
+                    <label><input type="checkbox">Concuerdo con los terminos y condiciones</label>
+                </div>
+                <button type="submit" class="btn">Continuar Registro (log_domicilio)</button>
+                <div class="login-register">
+                    <p>¿Ya tienes cuenta?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+<!--Necista validacion-->
