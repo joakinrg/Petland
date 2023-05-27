@@ -21,7 +21,6 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,4 +55,47 @@ header{
 .navigation a:hover::after{
     transform: scaleX(1);
     transform-origin: right;
+}
+
+#perrosadop{
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-size: 27px;
+    margin-bottom: 13px;
+    color: #162938;
+}
+.paw{
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 20%;
+    margin: auto;
+    font-size: 19px;
+}
+.paw ::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.paw ::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
