@@ -103,3 +103,41 @@ header{
     width: 40%;
     border-radius: 50%;
 }
+
+.perros .pet_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.perros .pet_list .pet1{
+    width: 20%;
+    text-align: center;
+}
+.pet1 .img{
+    width: 100%;
+    position: relative;
+}
+.pet1 .img img{
+    width: 98%;
+    z-index: 9;
+    cursor: pointer;
+}
+.pet1 .img svg{
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 115%;
+    z-index: -9;
+}
+.pet1 h4{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pet1 h4:hover{
+    color:#ffd80a
+}
