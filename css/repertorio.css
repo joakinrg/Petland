@@ -99,3 +99,7 @@ header{
     top: 0;
     margin: auto;
 }
+.pet_list img{
+    width: 40%;
+    border-radius: 50%;
+}
