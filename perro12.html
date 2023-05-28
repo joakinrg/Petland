@@ -2,28 +2,38 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/perro1.css" type="text/css">
+  <link rel="stylesheet" href="./css/perro.css" type="text/css">
+  <link rel="stylesheet" href="./css/header.css" type="text/css">
   <title>Perfil de Thor</title>
 </head>
 <body>
   <header>
-    <p class="logo"><img src="./imagenes_principal/logo.jpg"><h2>Petland</h2></p>
+    <div class="logo">
+      <img src="./imagenes_principal/logo.webp">
+    </div>
     <nav class="navigation">
-      <a href="./index.html">Home</a>
-      <a href="./usuario_informacion_adopcion.html">Cuidados y Preguntas Frecuentes</a>
-      <a href="./repertolio_perfiles.html">Adopta</a>
-      <a href="./historias_exito_petland.html">Historias de Éxito</a>
-      <a href="./refugio.html">Conoce el Refugio</a>
-      <a href="./PERFIL_USUARIO.html">Perfil</a>
-      <a href="./carritocompras.html">Carrito</a>
-      <a href="./login.html">Login</a>
+        <a href="./index.html">Home</a>
+        <a href="./usuario_informacion_adopcion.html">Cuidados y Preguntas Frecuentes</a>
+        <a href="./historias_exito_petland.html">Historias de Éxito</a>
+        <a href="./refugio.html">Conoce el Refugio</a>
     </nav>
+    <div class="icons">
+        <a class="btn-login" href="./login.html">
+            <span class="icon"><ion-icon name="log-in"></ion-icon></span>               
+        </a>
+        <a class="btn-cart" href="./carritocompras.html">
+            <span class="icon"><ion-icon name="cart"></ion-icon></span>               
+        </a>
+        <a class="btn-cart" href="./PERFIL_USUARIO.html">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>               
+        </a>
+    </div>
   </header>
 
   <main>
     <section>
       <h2>Thor</h2>
-      <img src="ruta-de-la-imagen-de-thor.jpg" alt="Foto de Thor" class="dog-image">
+      <img src="./imagenes_principal/12.png" alt="Foto de Thor" class="dog-image">
       <p>Perro disponible en adopción</p>
       <h3>Características</h3>
       <ul>
@@ -41,9 +51,10 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2023 Petland. Todos los derechos reservados.</p>
-  </footer>
+  <a href="formulario_adopcion_animal.html" class="button">Adoptar</a>
+	  <footer>
+		<p>&copy; 2023 Petland. Todos los derechos reservados.</p>
+	  </footer>
   <script src="./js/menu.js"></script>
   <script src="./js/form.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

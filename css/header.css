@@ -5,40 +5,46 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../imagenes_principal/background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: red;
+    padding: 15px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
     z-index: 99;
+    line-height: 2;
 }
-.logo{
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
+header .logo{
+    width: 90px;
+}
+header .logo img{
+    width: 100%;
+    border-radius: 25px;
+
+}
+header .icons{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+header .icons a{
+    font-size: 22px;
+    margin-left: 20px;
 }
 .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: #162938;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+}
+a{
+    color: #162938;
 }
 .navigation a::after{
     content: '';
@@ -47,7 +53,7 @@ header{
     width: 100%;
     bottom: -6px;
     height: 3px;
-    background: #fff;
+    background: #162938;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;

@@ -5,36 +5,74 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../imagenes_principal/background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 15px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
     z-index: 99;
+    line-height: 2;
 }
+header .logo{
+    width: 90px;
+}
+header .logo img{
+    width: 100%;
+    border-radius: 25px;
+
+}
+header .icons{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+header .icons a{
+    font-size: 22px;
+    margin-left: 20px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #162938;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+a{
+    color: #162938;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: #162938;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: left;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
 .logo{
     font-size: 2em;
-    color: #fff;
+    color: #162938;
     user-select: none;
 }
 .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: #162938;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -46,7 +84,7 @@ header{
     width: 100%;
     bottom: -6px;
     height: 3px;
-    background: #fff;
+    background: #162938;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
@@ -105,24 +143,30 @@ header{
 }
 
 .perros .pet_list{
-    display: flex;
+    display:flex ;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 50px;
+    
 }
 .perros .pet_list .pet1{
     width: 20%;
     text-align: center;
+    flex-basis: 25%;
+    
 }
 .pet1 .img{
     width: 100%;
     position: relative;
+    padding: 45px;
 }
 .pet1 .img img{
-    width: 98%;
+    width: 70%;
     z-index: 9;
     cursor: pointer;
+    transition: 0.5s;
 }
 .pet1 .img svg{
     position: absolute;
@@ -140,4 +184,7 @@ header{
 }
 .pet1 h4:hover{
     color:#ffd80a
+}
+.pet1 .img img:hover{
+    scale: 1.1;
 }

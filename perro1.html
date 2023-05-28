@@ -2,28 +2,38 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./css/perro1.css" type="text/css">
+	<link rel="stylesheet" href="./css/perro.css" type="text/css">
+	<link rel="stylesheet" href="./css/header.css" type="text/css">
 	<title>Perfil de Leonel</title>
 </head>
 <body>
 	<header>
-		<p class="logo"><img src="./imagenes_principal/logo.jpg"><h2>Petland</h2></p>
+		<div class="logo">
+		  <img src="./imagenes_principal/logo.webp">
+		</div>
 		<nav class="navigation">
 			<a href="./index.html">Home</a>
 			<a href="./usuario_informacion_adopcion.html">Cuidados y Preguntas Frecuentes</a>
-			<a href="./repertolio_perfiles.html">Adopta</a>
 			<a href="./historias_exito_petland.html">Historias de Éxito</a>
 			<a href="./refugio.html">Conoce el Refugio</a>
-			<a href="./PERFIL_USUARIO.html">Perfil</a>
-			<a href="./carritocompras.html">Carrito</a>
-			<a href="./login.html">Login</a>
 		</nav>
-	</header>
+		<div class="icons">
+			<a class="btn-login" href="./login.html">
+				<span class="icon"><ion-icon name="log-in"></ion-icon></span>               
+			</a>
+			<a class="btn-cart" href="./carritocompras.html">
+				<span class="icon"><ion-icon name="cart"></ion-icon></span>               
+			</a>
+			<a class="btn-cart" href="./PERFIL_USUARIO.html">
+				<span class="icon"><ion-icon name="person"></ion-icon></span>               
+			</a>
+		</div>
+	  </header>
 
 	<main>
 	<section>
 		<h2>Leonel</h2>
-		<img src="ruta-de-la-imagen-de-leonel.jpg" alt="Foto de Leonel" class="dog-image">
+		<img src="./imagenes_principal/1.jpg" alt="Foto de Leonel" class="dog-image">
         <p>Perro disponible en adopción</p>
         <h3>Características</h3>
         <ul>
@@ -42,8 +52,7 @@
 	</section>
  	</main>
 	<p></p>
-	<a href="pagina_proceso_adopcion.html">Que necesito para adoptar(forzozamente leer si no no poder adopatr)</button>
-	<a href="formulario_adopcion_animal.html">Adoptar</button>
+	<a href="formulario_adopcion_animal.html" class="button">Adoptar</a>
  
 
  <footer>

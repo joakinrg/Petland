@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <p class="logo"><img src="./imagenes_principal/logo.jpg"><h2>Petland</h2></p>
+        <div class="logo">
+          <img src="./imagenes_principal/logo.webp">
+        </div>
         <nav class="navigation">
-            <button class="btn-salir">
-                <span class="text">Eliminar usuario</span>                  
-            </button>
-            <button class="btn-salir">
-                <span class="text">Agregar perro en adopción</span>                  
-            </button>
-            <button class="btn-salir">
-                <span class="text">Eliminar perro en adopcion</span>                 
-            </button>
-            <button class="btn-salir">
-                <span class="text">Salir</span>                  
-            </button>
+            <a href="./index.html">Home</a>
+            <a href="./usuario_informacion_adopcion.html">Cuidados y Preguntas Frecuentes</a>
+            <a href="./historias_exito_petland.html">Historias de Éxito</a>
+            <a href="./refugio.html">Conoce el Refugio</a>
         </nav>
-    </header>
+        <div class="icons">
+            <a class="btn-login" href="./login.html">
+                <span class="icon"><ion-icon name="log-in"></ion-icon></span>               
+            </a>
+            <a class="btn-cart" href="./carritocompras.html">
+                <span class="icon"><ion-icon name="cart"></ion-icon></span>               
+            </a>
+            <a class="btn-cart" href="./PERFIL_USUARIO.html">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>               
+            </a>
+        </div>
+      </header>
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
         <div class="eliminar">

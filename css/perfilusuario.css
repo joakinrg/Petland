@@ -1,59 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../imagenes_principal/background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
+.banner{
     width: 100%;
-    padding: 20px 100px;
-    background: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-.logo{
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
-}
-.navigation a {
+    height: 75vh;
+    background-image: url(../imagenes_principal/right_banner.webp);
+    background-position: right center;
+
+    background-repeat: no-repeat;
     position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
+    margin-bottom: 150px;
 }
-.navigation a::after{
-    content: '';
+.banner .bannertxt {
+    width: 36%;
+    height: 30%;
     position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: -6px;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform .5s;
-    transform-origin: left;
-}
-.navigation a:hover::after{
-    transform: scaleX(1);
-    transform-origin: right;
+    top: -42%;
+    left: 3%;
+    bottom: -15px;
+    margin: auto;
+    margin-left: 20px; /* Agrega un margen izquierdo deseado */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+.readonly-input {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    /* Otros estilos personalizados que desees agregar */
+  }
+  .btn{
+    width: 30%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+
 }
