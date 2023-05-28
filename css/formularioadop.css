@@ -1,59 +1,135 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../imagenes_principal/background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: .2s linear;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
+body {
+  padding: 20px;
 }
-.logo{
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.navigation a {
-    position: relative;
-    font-size: 1.1em;
+
+header .logo {
+  width: 90px;
+}
+
+header .logo img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .navigation a {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .icons a {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.adoptante {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+#form_text {
+  margin-bottom: 20px;
+}
+
+#form_text h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#formulario input[type="radio"] {
+  margin-right: 10px;
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.enviar {
+  margin-top: 20px;
+}
+
+.enviar input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  color: #333;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.copy {
+  margin-top: 40px;
+  text-align: center;
+}
+a.finalizar, a.cancelar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-.navigation a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: -6px;
-    height: 3px;
-    background: #fff;
     border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform .5s;
-    transform-origin: left;
-}
-.navigation a:hover::after{
-    transform: scaleX(1);
-    transform-origin: right;
-}
+    margin-right: 10px;
+  }
+  
+  a.cancelar {
+    background-color: #ccc;
+  }
